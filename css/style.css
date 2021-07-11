@@ -1375,6 +1375,6 @@ pre .javascript .function {
 
 
 
-.highlight{
+mark.highlight{
   background: linear-gradient(transparent 40%, yellow 40%) !important;
 }
