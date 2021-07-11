@@ -314,7 +314,9 @@ body {
   position: relative;
   border-bottom: 1px solid #ddd;
 }
-
+#header{
+  background:#f7f7f7;
+}
 #header-outer {
   height: 100%;
   position: relative;
