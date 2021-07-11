@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&family=Sawarabi+Mincho&display=swap');
+
 body {
   width: 100%;
 }
@@ -322,6 +324,17 @@ body {
   position: relative;
   overflow: hidden;
 }
+
+#header-inner{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#header-inner .sub-nav{
+  display: none;
+}
+
 #banner {
 
 }
@@ -351,6 +364,8 @@ body {
 }
 #logo{
   font-size: 30px;
+  font-family: 'Sawarabi Gothic', sans-serif;
+  font-family: 'Sawarabi Mincho', sans-serif;
 }
 #logo-wrap{
   padding:0 20px;
