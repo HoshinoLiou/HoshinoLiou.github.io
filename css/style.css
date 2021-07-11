@@ -326,7 +326,8 @@ body {
 
 }
 #header-title {
-  text-align: center;
+  color:#242424;
+  text-align: left;
   height: 40px;
   position: absolute;
   top: 50%;
