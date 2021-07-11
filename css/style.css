@@ -323,16 +323,18 @@ body {
 }
 #header-inner {
   color:#242424;
-  position: relative;
+  position: absolute;
   overflow: hidden;
+  bottom:12px;
 }
 
 #header-inner{
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  font-family: 'Sawarabi Gothic', sans-serif;
   font-family: 'Sawarabi Mincho', sans-serif;
+  font-family: 'Sawarabi Gothic', sans-serif;
+  
 }
 
 #header-inner #sub-nav{
