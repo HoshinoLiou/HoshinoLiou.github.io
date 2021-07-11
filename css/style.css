@@ -352,6 +352,9 @@ body {
 #logo{
   font-size: 30px;
 }
+#logo-wrap{
+  padding:0 20px;
+}
 #logo h3{
   font-size: 18px;
 }
