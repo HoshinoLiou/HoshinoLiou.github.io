@@ -1372,9 +1372,3 @@ pre .javascript .function {
   margin-right: 5px;
   display: inline-block;
 }
-
-
-
-mark{
-  background: linear-gradient(transparent 40%, yellow 40%) !important;
-}

@@ -14,7 +14,7 @@
 <meta property="og:description" content="Hexo 是甚麼? Hexo官網  Github 是甚麼? Github官網         第一步 - 註冊 Github、設定本地資料夾 首先要 註冊 Github 帳號，並在自己的頁面 新增一個 Repository  Repository 的名稱為 &lt;使用者帳號&gt;.github.io，好比說我的帳號id是 HoshinoLiou， 名稱就會是 HoshinoLiou.gith">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-07-11T01:43:23.000Z">
-<meta property="article:modified_time" content="2021-07-11T07:18:53.937Z">
+<meta property="article:modified_time" content="2021-07-11T09:04:06.661Z">
 <meta property="article:author" content="Hoshino Liou">
 <meta name="twitter:card" content="summary">
   
@@ -104,47 +104,45 @@
 <br>
     
 <h5 id="第一步-註冊-Github、設定本地資料夾"><a href="#第一步-註冊-Github、設定本地資料夾" class="headerlink" title="第一步 - 註冊 Github、設定本地資料夾"></a>第一步 - 註冊 Github、設定本地資料夾</h5><ol>
-<li>首先要 <mark class="highlight">註冊 Github 帳號</mark>，並在自己的頁面 <mark class="highlight">新增一個 Repository</mark><img  src=""/>
+<li>首先要 <mark>註冊 Github 帳號</mark>，並在自己的頁面 <mark>新增一個 Repository</mark><img  src=""/>
 <br></li>
-<li>Repository 的名稱為 <mark class="highlight">&lt;使用者帳號&gt;.github.io</mark>，好比說我的帳號id是 HoshinoLiou， 名稱就會是 <mark class="highlight">HoshinoLiou.github.io</mark>。<img  src=""/>
+<li>Repository 的名稱為 <mark>&lt;使用者帳號&gt;.github.io</mark>，好比說我的帳號id是 HoshinoLiou， 名稱就會是 <mark>HoshinoLiou.github.io</mark>。<img  src=""/>
 <br></li>
-<li>在本機端 <mark class="highlight">創建一個名為 &lt;使用者帳號&gt;.github.io 的資料夾</mark> (使用者帳號一樣填入自己的帳號id)，然後依照 Github 提供的指令進行設定。<img  src=""/>
+<li>在本機端 <mark>創建一個名為 &lt;使用者帳號&gt;.github.io 的資料夾</mark> (使用者帳號一樣填入自己的帳號id)，然後依照 Github 提供的指令進行設定。<img  src=""/>
 <br></li>
 </ol>
 <h5 id="第二步-安裝-Hexo、以及事前準備"><a href="#第二步-安裝-Hexo、以及事前準備" class="headerlink" title="第二步 - 安裝 Hexo、以及事前準備"></a>第二步 - 安裝 Hexo、以及事前準備</h5><ol>
-<li>因為要使用 npm 進行 Hexo 的安裝，所以需要先 <mark class="highlight">安裝 Node.js</mark> (至 <a target="_blank" rel="noopener" href="https://github.com/">Node.js官網</a>下載)。安裝完成後，在 cmd 中輸入 <mark class="highlight">node –version</mark> 以及 <mark class="highlight">npm –version</mark> 確認是否安裝成功。(有出現版本資訊，代表有安裝成功)<img  src=""/>
-<br></li>
+<li>因為要使用 npm 進行 Hexo 的安裝，所以需要先 <mark>安裝 Node.js</mark> (至 <a target="_blank" rel="noopener" href="https://github.com/">Node.js官網</a>下載)。安裝完成後，在 cmd 中輸入 <mark>node –version</mark> 以及 <mark>npm –version</mark> 確認是否安裝成功。(有出現版本資訊，代表有安裝成功)<img  src=""/></li>
 </ol>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ node --version</span><br><span class="line">v14.17.3</span><br></pre></td></tr></table></figure>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm --version</span><br><span class="line">6.14.13</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ node --version</span><br><span class="line"><span class="string">&quot;v14.17.3&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm --version</span><br><span class="line"><span class="string">&quot;6.14.13&quot;</span></span><br></pre></td></tr></table></figure>
 <ol start="2">
-<li>使用 npm 進行 Hexo 的安裝，在 cmd 中輸入 <mark class="highlight">npm install hexo-cli -g</mark> 進行安裝。安裝完成後，一樣在 cmd 中輸入 <mark class="highlight">hexo –version</mark> 確認是否安裝成功。(有出現版本相關資訊，代表有安裝成功)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --version</span><br><span class="line">hexo-cli: 4.3.0</span><br><span class="line">：</span><br></pre></td></tr></table></figure></li>
+<li>使用 npm 進行 Hexo 的安裝，在 cmd 中輸入 <mark>npm install hexo-cli -g</mark> 進行安裝。安裝完成後，一樣在 cmd 中輸入 <mark>hexo –version</mark> 確認是否安裝成功。(有出現版本相關資訊，代表有安裝成功)</li>
 </ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --version</span><br><span class="line"><span class="string">&quot;hexo-cli: 4.3.0&quot;</span></span><br><span class="line"><span class="string">&quot;：&quot;</span></span><br></pre></td></tr></table></figure>
+
 <h5 id="第三步-建立-Hexo-專案、部署於-Github-上"><a href="#第三步-建立-Hexo-專案、部署於-Github-上" class="headerlink" title="第三步 - 建立 Hexo 專案、部署於 Github 上"></a>第三步 - 建立 Hexo 專案、部署於 Github 上</h5><ol>
-<li>在 cmd 中輸入 <mark class="highlight">hexo init blog</mark>，這個指令會在本地端產生一個名為 blog 的資料夾，資料夾裡面也會產生 Hexo 基本的設定檔案。我們將裡面的檔案 <mark class="highlight">全部複製到第一個步驟建立的 &lt;使用者帳號&gt;.github.io 資料夾中</mark>。</li>
-<li>然後在 &lt;使用者帳號&gt;.github.io 資料夾中用 cmd 執行 <mark class="highlight">npm install</mark>，就會看到 Hexo 的相關檔案被建立。<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure></li>
-<li>打開 config.yml 進行設定，在 deploy 的部分進行修改。<pre><code> deploy:
-   type: git
-   repo: https://github.com/HoshinoLiou/HoshinoLiou.github.io.git
-   branch: master
- 
-</code></pre>
-</li>
-<li>更新完 config.yml 後，需要執行 hexo clean 以及 hexo generate。之後可以透過 hexo server 在本地端進行測試，如果確認沒問題就可以使用 hexo deploy 將結果佈署到 Github 上。(如果在執行 deploy 時，出現 ERROR Deployer not found: git 的錯誤，就在 cmd 中執行 <mark class="highlight">npm install hexo-deployer-git –save</mark>)<pre><code> hexo clean
- hexo generate
- hexo server
- hexo deploy
- 
-</code></pre>
-</li>
+<li>在 cmd 中輸入 <mark>hexo init blog</mark>，這個指令會在本地端產生一個名為 blog 的資料夾，資料夾裡面也會產生 Hexo 基本的設定檔案。我們將裡面的檔案 <mark>全部複製到第一個步驟建立的 &lt;使用者帳號&gt;.github.io 資料夾中</mark>。</li>
+<li>然後在 &lt;使用者帳號&gt;.github.io 資料夾中用 cmd 執行 <mark>npm install</mark>，就會看到 Hexo 的相關檔案被建立。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>打開 config.yml 進行設定，在 deploy 的部分進行修改。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">		<span class="built_in">type</span>: git</span><br><span class="line">  		repo: https://github.com/HoshinoLiou/HoshinoLiou.github.io.git</span><br><span class="line">  		branch: master</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>更新完 config.yml 後，需要執行 hexo clean 以及 hexo generate。之後可以透過 hexo server 在本地端進行測試，如果確認沒問題就可以使用 hexo deploy 將結果佈署到 Github 上。(如果在執行 deploy 時，出現 ERROR Deployer not found: git 的錯誤，就在 cmd 中執行 <mark>npm install hexo-deployer-git –save</mark>)</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo server</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<ol start="5">
 <li>打開 Github 頁面點選 Settings ，接著點選下方的 GitHub Pages 即可看到結果。</li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/11/%E4%BD%BF%E7%94%A8-Hexo-%E8%88%87-Github-%E6%89%93%E9%80%A0%E5%B1%AC%E6%96%BC%E8%87%AA%E5%B7%B1%E7%9A%84%E9%83%A8%E8%90%BD%E6%A0%BC/" data-id="ckqyvower0001owwl6urhbprp" data-title="使用 Hexo 與 Github 打造屬於自己的部落格" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/07/11/%E4%BD%BF%E7%94%A8-Hexo-%E8%88%87-Github-%E6%89%93%E9%80%A0%E5%B1%AC%E6%96%BC%E8%87%AA%E5%B7%B1%E7%9A%84%E9%83%A8%E8%90%BD%E6%A0%BC/" data-id="ckqyz3h4x000254wlaba3bdov" data-title="使用 Hexo 與 Github 打造屬於自己的部落格" class="article-share-link">Share</a>
       
       
       
