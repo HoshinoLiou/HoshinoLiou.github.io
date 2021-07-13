@@ -1396,8 +1396,8 @@ mark{
 .article-entry .gist .gist-file .gist-meta{
   text-shadow: none;
   width: 100%;
-  padding: none;
-  font: none;
+  padding: 8px 11px;
+  font: sans-serif;
   margin-left: 0px;
   background: #f7f7f7;
 }
