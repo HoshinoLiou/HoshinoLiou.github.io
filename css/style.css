@@ -1389,14 +1389,15 @@ mark{
 .article-entry .gist{
   margin:0;
   background:none;
-  border: 1px solid #f7f7f7;
+  border: 1px solid #dfdfdf;
   padding: 15px 20px 0px 0;
+  border-radius: 5px;
 }
 
 .article-entry .gist .gist-file .gist-meta{
   text-shadow: none;
   width: 100%;
-  padding: 8px 11px;
+  padding: 8px 10px;
   font: sans-serif;
   margin-left: 0px;
   background: #f7f7f7;
