@@ -1384,3 +1384,20 @@ pre .javascript .function {
 mark{
   background: linear-gradient(transparent 40%, yellow 40%) !important;
 }
+
+
+.article-entry .gist{
+  margin:0;
+  background:none;
+  border: 1px solid #f7f7f7;
+  padding: 15px 20px 0px 0;
+}
+
+.article-entry .gist .gist-file .gist-meta{
+  text-shadow: none;
+  width: 100%;
+  padding: none;
+  font: none;
+  margin-left: 0px;
+  background: #f7f7f7;
+}

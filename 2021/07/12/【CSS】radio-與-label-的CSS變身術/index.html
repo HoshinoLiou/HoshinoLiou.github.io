@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>【CSS】radio 與 label 的CSS變身術 | 星野筆記</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="如果有使用過「表單程式」或是對HTML有點概念的人，應該都對 radio 與 checkbox 不陌生也很了解它們的操作特性。(圓圈代表只能選擇其一，方格代表可以複選項目) radio 的使用情境 男、 女 checkbox 的使用情境 做甜點、 看電影、 爬山 也許有人認為原本的外觀設計已經很漂亮了，甚至覺得為了 UX 的考量，盡量不改變它們的外觀才是正確的。 但如果想要讓它們更貼近自己網站的設">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【CSS】radio 與 label 的CSS變身術">
+<meta property="og:url" content="http://example.com/2021/07/12/%E3%80%90CSS%E3%80%91radio-%E8%88%87-label-%E7%9A%84CSS%E8%AE%8A%E8%BA%AB%E8%A1%93/index.html">
+<meta property="og:site_name" content="星野筆記">
+<meta property="og:description" content="如果有使用過「表單程式」或是對HTML有點概念的人，應該都對 radio 與 checkbox 不陌生也很了解它們的操作特性。(圓圈代表只能選擇其一，方格代表可以複選項目) radio 的使用情境 男、 女 checkbox 的使用情境 做甜點、 看電影、 爬山 也許有人認為原本的外觀設計已經很漂亮了，甚至覺得為了 UX 的考量，盡量不改變它們的外觀才是正確的。 但如果想要讓它們更貼近自己網站的設">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-07-12T12:22:44.000Z">
+<meta property="article:modified_time" content="2021-07-13T12:40:00.138Z">
+<meta property="article:author" content="Hoshino Liou">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="星野筆記" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">星野筆記</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Hoshino&#39;s Notes</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-【CSS】radio-與-label-的CSS變身術" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/07/12/%E3%80%90CSS%E3%80%91radio-%E8%88%87-label-%E7%9A%84CSS%E8%AE%8A%E8%BA%AB%E8%A1%93/" class="article-date">
+  <time class="dt-published" datetime="2021-07-12T12:22:44.000Z" itemprop="datePublished">2021-07-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      【CSS】radio 與 label 的CSS變身術
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>如果有使用過「表單程式」或是對HTML有點概念的人，應該都對 radio 與 checkbox 不陌生<br>也很了解它們的操作特性。(圓圈代表只能選擇其一，方格代表可以複選項目)</p>
+<p><mark>radio 的使用情境</mark><br><input name="testGender" type="radio"> 男、<input name="testGender" type="radio"> 女</p>
+<p><mark>checkbox 的使用情境</mark><br><input type="checkbox"> 做甜點、<input type="checkbox"> 看電影、<input type="checkbox"> 爬山</p>
+<p>也許有人認為原本的外觀設計已經很漂亮了，甚至覺得為了 UX 的考量，盡量不改變它們的外觀才是正確的。</p>
+<p>但如果想要讓它們更貼近自己網站的設計風格，有辦法可以對它們的外觀做改變嗎?<br>(像 facebook 也對它們也進行了修飾，而不是採用預設的樣式)</p>
+<p>今天就分享 3 個步驟，讓大家學會如何客製化自己的 radio ! (radio 與 checkbox 類似，所以只要懂其一，便能舉一反三)<br>( 要閱讀本文，建議先初步了解 <label>、margin與padding的差異、display(flex,none)、CSS選擇器(&gt;+~,)、CSS偽類(:checked) )<br>( 延伸閱讀: GoogleFont的使用 )</p>
+<h5 id="步驟一"><a href="#步驟一" class="headerlink" title="步驟一:"></a>步驟一:</h5><p>先完成簡單的HTML結構</p>
+<script src="https://gist.github.com/HoshinoLiou/8cde04e0f5203d90767ac78cfd588171.js"></script>
+
+<p>接著設定它們的 CSS</p>
+<script src="https://gist.github.com/HoshinoLiou/635826083aa4f74e7a5d9555a86702a3.js"></script>
+
+
+<h5 id="步驟二"><a href="#步驟二" class="headerlink" title="步驟二:"></a>步驟二:</h5><p>在 .formElement 之中增加三組 radio 與 label，分別為「男性」、「女性」、「未選擇」</p>
+<script src="https://gist.github.com/HoshinoLiou/2afb5742779877662505ce84296f1ab2.js"></script>
+
+<p>接著設定它們的 CSS</p>
+<script src="https://gist.github.com/HoshinoLiou/9504868f329b5434b88d836afe130e6f.js"></script>
+
+
+<h5 id="步驟三"><a href="#步驟三" class="headerlink" title="步驟三:"></a>步驟三:</h5><p>HTML 的部分已經完成了，現在針對 CSS 的部分再增加幾行程式。<br>這裡的關鍵在於 偽類 :checked，它會在 radio 與 checkbox “被勾選” 時觸發<br>下方我會盡量用白話的方式說明。</p>
+<script src="https://gist.github.com/HoshinoLiou/eda86eb002bb242edeb56da460ddb30e.js"></script>
+
+<p>完成以上的工作，即可完成一個客製化的 radio 囉!</p>
+<p>最後附上完整程式碼:</p>
+<script src="https://gist.github.com/HoshinoLiou/8bd42d81059a6503b169a40d4664b006.js"></script>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/07/12/%E3%80%90CSS%E3%80%91radio-%E8%88%87-label-%E7%9A%84CSS%E8%AE%8A%E8%BA%AB%E8%A1%93/" data-id="ckr2253jw0001s4wlf5ga8tt4" data-title="【CSS】radio 與 label 的CSS變身術" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/07/11/%E4%BD%BF%E7%94%A8-Hexo-%E8%88%87-Github-%E6%89%93%E9%80%A0%E5%B1%AC%E6%96%BC%E8%87%AA%E5%B7%B1%E7%9A%84%E9%83%A8%E8%90%BD%E6%A0%BC/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">【架站】使用 Hexo 與 Github 打造屬於自己的部落格</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/07/12/%E3%80%90CSS%E3%80%91radio-%E8%88%87-label-%E7%9A%84CSS%E8%AE%8A%E8%BA%AB%E8%A1%93/">【CSS】radio 與 label 的CSS變身術</a>
+          </li>
+        
+          <li>
+            <a href="/2021/07/11/%E4%BD%BF%E7%94%A8-Hexo-%E8%88%87-Github-%E6%89%93%E9%80%A0%E5%B1%AC%E6%96%BC%E8%87%AA%E5%B7%B1%E7%9A%84%E9%83%A8%E8%90%BD%E6%A0%BC/">【架站】使用 Hexo 與 Github 打造屬於自己的部落格</a>
+          </li>
+        
+          <li>
+            <a href="/2021/07/10/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Hoshino Liou<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
